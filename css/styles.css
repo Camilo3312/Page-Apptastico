@@ -16,10 +16,10 @@
 
 header {
     background: #4b5b66;
-    
 }
 
 .container_nav {
+    max-width: var(--max-width-page);
     margin: auto;
     padding: 25px 80px;
 
