@@ -334,7 +334,43 @@ footer {
 
 
 @media screen and (max-width: 1000px) {
+
+    p {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 22px;
+    }
+
+    .title_projects p {
+        font-size: 25px;
+    }
+
+    .date {
+        font-size: 17px;
+    }
+
+    .text_blog p:first-child {
+        font-size: 25px;      
+    }
+    .text_blog p:nth-child(2) {
+        font-size: 22px;       
+    }
     
+    .text_blog p:nth-child(3) {
+        font-size: 17px;     
+    }
+
+    .container_service p:nth-child(2) {
+        font-size: 25px;    
+    }
+
+    .container_buttons a:first-child {
+        font-size: 25px;      
+    }
+
+    /*----------------------*/
     .container_nav nav ul li a {
         font-size: 25px;
     } 
@@ -410,5 +446,4 @@ footer {
         grid-column: 1/3;
 
     }
-
 }
