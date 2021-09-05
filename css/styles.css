@@ -21,7 +21,7 @@ header {
 .container_nav {
     max-width: var(--max-width-page);
     margin: auto;
-    padding: 25px 0;
+    padding: 25px 15px;
 
     display: flex;
     align-items: center;
@@ -46,6 +46,13 @@ nav ul li {
 nav ul li a {
     color: #ebebeb;
     text-decoration: none;
+}
+
+.btn_menu {
+    padding: 10px;
+    color: #FFFF;
+    font-size: 25px;
+    display: none;
 }
 
 .selected {
@@ -313,10 +320,11 @@ nav ul li a {
 
 /*----------Inicio footer------------*/
 
-footer {
+.container_footer {
     max-width: var(--max-width-page);
     margin: auto;
-    padding: 15px;
+    padding: 15px 0;
+
     border-top: 1px solid #e7e7e7;
     color: #686868;
 
@@ -334,14 +342,49 @@ footer {
 
 @media screen and (max-width: 1000px) {
 
-    p {
+    .btn_menu {
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 6em;
+        right: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background: #4b5b66;
+        transition: all 300ms ease-in-out;
+        /* right: 0; 
+        top: 90px; */
+        /* display: none; */
+    }
+
+    nav ul {
+        max-width: 80%;
+        margin: auto;
+        transition: all 400ms ease-in-out;
+        transition-delay: 100ms;
+        flex-direction: column;
+        
+    }
+
+    
+
+    /* p {
         font-size: 22px;
     }
 
     a {
-        font-size: 22px;
-    }
+        font-size: 25px;
+    } */
 
+    nav ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+        padding: 10px 0;
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
     .title_projects p {
         font-size: 25px;
     }
@@ -370,13 +413,6 @@ footer {
     }
 
     /*----------------------*/
-    .container_nav nav ul li a {
-        font-size: 25px;
-    } 
-
-    .container_nav {
-        flex-direction: column;
-    }
 
     .info_header {
         flex-direction: column-reverse;    
@@ -445,4 +481,17 @@ footer {
         grid-column: 1/3;
 
     }
+
+    .info_blog {
+        flex-direction: column;
+        align-items: flex-start;       
+    }
+
+    .text_blog {
+        margin: 5px 0;
+    }
+}
+
+.show {
+    right: 0;
 }
