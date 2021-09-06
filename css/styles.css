@@ -8,6 +8,7 @@
     --subtitles: #3f505b;
     --max-width-page: 1100px;
     --padding-containers: 0 20px;
+    --parragraphs-color: #797979; 
 }
 
 /*---------------*/
@@ -111,7 +112,7 @@ nav ul li a {
 }
 
 .container_buttons {
-    width: 370px;
+    width: 385px;
 
     display: flex;
     align-items: center;
@@ -177,7 +178,7 @@ nav ul li a {
 
 .container_service {
     grid-column: span 1;
-    color: #686868;
+    color: var(--parragraphs-color);
 
     display: flex;
     flex-direction: column;
@@ -304,7 +305,7 @@ nav ul li a {
 .text_blog p:nth-child(2) {
     font-size: 15px;
     line-height: 24px;
-    color: #686868;
+    color: var(--parragraphs-color);
 }
 
 .text_blog p:nth-child(3) {
@@ -324,7 +325,7 @@ nav ul li a {
 } 
 
 .twett p {
-    color: #686868;
+    color: var(--parragraphs-color);
     line-height: 24px;
 }
 
