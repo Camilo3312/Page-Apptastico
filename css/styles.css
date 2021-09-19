@@ -356,8 +356,35 @@ footer {
 /*----------Fin footer------------*/
 
 /*----------Mediaqueris------------*/
+@media screen and (max-width: 1024px){
+    .container_nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .info_header {
+        flex-direction: column-reverse;    
+    }
 
-@media screen and (max-width: 1000px) {
+    .nav_var ul li a {
+        font-size: 25px;
+    }
+
+    .blog {
+        grid-column: 1/3;
+    }
+    
+    .twetts {
+        grid-column: 1/3;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .container_nav {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
     .btn_menu {
         display: block;
@@ -462,14 +489,6 @@ footer {
     .container_buttons {
         flex-direction: column;
         justify-content: center;
-    }
-
-    .blog {
-        grid-column: 1/3;
-    }
-    
-    .twetts {
-        grid-column: 1/3;
     }
 
     .info_blog {
